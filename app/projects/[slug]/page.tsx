@@ -1,0 +1,7 @@
+import Image from "next/image";
+import { notFound } from "next/navigation";
+import DetailShell from "@/components/DetailShell";
+import { getSiteContent } from "@/lib/storage";
+export const dynamic = "force-dynamic";
+export async function generateMetadata({ params }: { params: Promise<{slug:string}> }) { const {slug}=await params; const c=await getSiteContent(); const x=c.projects.find(i=>i.slug===slug&&i.status==="published"); return x?{title:`${x.title} | Team DRSA`,description:x.description}:{title:"Project Not Found | Team DRSA"}; }
+export default async function Page({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const c=await getSiteContent();const x=c.projects.find(i=>i.slug===slug&&i.status==="published");if(!x)notFound();return <DetailShell eyebrow={x.sector} title={x.title} description={x.description} backHref="/#projects" backLabel="Back to projects"><div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04]"><Image src={x.image} alt={x.title} width={1600} height={900} className="max-h-[620px] w-full object-cover" /><div className="p-7"><h2 className="text-2xl font-semibold">Project overview</h2><p className="mt-4 max-w-3xl leading-8 text-zinc-300">{x.description}</p><p className="mt-6 text-sm leading-7 text-zinc-500">Detailed client-sensitive scope, architecture, metrics, and implementation evidence can be published here when approved for public release.</p></div></div></DetailShell>}

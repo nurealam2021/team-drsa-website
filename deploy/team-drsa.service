@@ -1,0 +1,21 @@
+[Unit]
+Description=Team DRSA Website
+After=network.target
+
+[Service]
+Type=simple
+User=teamdrsa
+Group=teamdrsa
+WorkingDirectory=/var/www/team-drsa
+EnvironmentFile=/etc/team-drsa/team-drsa.env
+ExecStart=/usr/bin/npm start -- -H 127.0.0.1 -p 3000
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+ReadWritePaths=/var/lib/team-drsa-website
+
+[Install]
+WantedBy=multi-user.target

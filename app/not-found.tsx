@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function NotFound(){return <main className="grid min-h-screen place-items-center bg-[#0A0A0A] px-5 text-center text-white"><div><p className="text-sm font-black uppercase tracking-[0.3em] text-[#C1121F]">404</p><h1 className="mt-4 text-4xl font-semibold">Page not found</h1><p className="mt-4 text-zinc-400">The requested Team DRSA page does not exist or is not published.</p><Link href="/" className="mt-7 inline-flex rounded-xl bg-[#C1121F] px-5 py-3 font-bold">Return home</Link></div></main>}

@@ -1,0 +1,349 @@
+@import "tailwindcss";
+
+/*
+  Team DRSA Website - Global CSS
+
+  File path:
+  app/globals.css
+
+  Purpose:
+  1. Load Tailwind CSS.
+  2. Keep the website dark and smooth.
+  3. Fix the rotating globe animation using pure CSS.
+  4. Make the globe compatible with laptop, mobile, LAN browsers, and large 32-inch screens.
+*/
+
+/* ---------- Base website style ---------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #0A0A0A;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- Brand logo sizing ---------- */
+/* Your logo file path: public/logo/logo.png */
+
+.navbar-logo-img {
+  height: clamp(64px, 5vw, 88px);
+  width: auto;
+  max-width: 240px;
+  object-fit: contain;
+}
+
+/* ---------- Globe animation keyframes ---------- */
+
+/*
+  This rotates the earth/globe body.
+  translateZ(0) helps browser GPU acceleration.
+*/
+@keyframes rc-spin-clockwise {
+  from {
+    transform: rotate(0deg) translateZ(0);
+  }
+
+  to {
+    transform: rotate(360deg) translateZ(0);
+  }
+}
+
+/*
+  This counter-rotates service cards.
+  The orbit moves, but the text remains readable.
+*/
+@keyframes rc-spin-counter {
+  from {
+    transform: rotate(0deg) translateZ(0);
+  }
+
+  to {
+    transform: rotate(-360deg) translateZ(0);
+  }
+}
+
+/* ---------- Globe main wrapper ---------- */
+
+/*
+  --globe-size controls total globe system size.
+  clamp() makes it responsive:
+  - minimum: 340px
+  - fluid: 34vw
+  - maximum: 560px
+
+  This prevents breaking on large 32-inch monitors.
+*/
+.rc-globe-stage {
+  --globe-size: clamp(340px, 34vw, 560px);
+  --orbit-radius: calc(var(--globe-size) * 0.405);
+  --earth-inset: clamp(58px, 4.8vw, 88px);
+
+  position: relative;
+  width: var(--globe-size);
+  height: var(--globe-size);
+  overflow: visible;
+  isolation: isolate;
+  transform: translateZ(0);
+}
+
+/* Large screen safety */
+@media (min-width: 1600px) {
+  .rc-globe-stage {
+    --globe-size: 540px;
+    --orbit-radius: 222px;
+  }
+}
+
+/* Very large monitor safety */
+@media (min-width: 2200px) {
+  .rc-globe-stage {
+    --globe-size: 560px;
+    --orbit-radius: 230px;
+  }
+}
+
+/* Mobile safety */
+@media (max-width: 640px) {
+  .rc-globe-stage {
+    --globe-size: min(88vw, 370px);
+    --orbit-radius: calc(var(--globe-size) * 0.39);
+    --earth-inset: 56px;
+  }
+}
+
+/* ---------- Globe visual earth ---------- */
+
+.rc-globe-earth {
+  position: absolute;
+  inset: var(--earth-inset);
+  border-radius: 9999px;
+  border: 1px solid rgba(193, 18, 31, 0.48);
+  background:
+    radial-gradient(
+      circle at 30% 30%,
+      rgba(255, 255, 255, 0.22),
+      rgba(193, 18, 31, 0.18) 24%,
+      rgba(0, 0, 0, 0.22) 58%,
+      rgba(10, 10, 10, 0.86) 100%
+    );
+  box-shadow: 0 0 82px rgba(193, 18, 31, 0.34);
+
+  /*
+    Live globe rotation.
+    Increase duration for slower rotation.
+    Decrease duration for faster rotation.
+  */
+  animation: rc-spin-clockwise 28s linear infinite;
+
+  will-change: transform;
+  backface-visibility: hidden;
+  transform-origin: 50% 50%;
+}
+
+/* Outer orbit ring */
+.rc-orbit-ring {
+  position: absolute;
+  inset: clamp(18px, 2.4vw, 34px);
+  border: 1px dashed rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+  pointer-events: none;
+}
+
+/* ---------- Orbit service layer ---------- */
+
+/*
+  This layer rotates all service cards around the center.
+*/
+.rc-orbit-layer {
+  position: absolute;
+  inset: 0;
+
+  /*
+    Service card orbit speed.
+    20s is balanced, not too slow and not too fast.
+  */
+  animation: rc-spin-clockwise 20s linear infinite;
+
+  will-change: transform;
+  transform-origin: 50% 50%;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+/*
+  Each node is placed around the center by angle.
+  Angle comes from React inline style:
+  style={{ "--angle": `${angle}deg` }}
+*/
+.rc-orbit-node {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform:
+    translate(-50%, -50%)
+    rotate(var(--angle))
+    translateY(calc(var(--orbit-radius) * -1));
+  transform-origin: 50% 50%;
+}
+
+/*
+  The orbit card counter-rotates.
+  This keeps text readable while orbit layer moves.
+*/
+.rc-orbit-card {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: clamp(145px, 9vw, 190px);
+  min-height: 48px;
+  padding: 9px 11px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(10, 3, 4, 0.78);
+  color: #FFFFFF;
+  font-size: clamp(10px, 0.72vw, 12px);
+  font-weight: 800;
+  line-height: 1.18;
+  text-decoration: none;
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(18px);
+
+  animation: rc-spin-counter 20s linear infinite;
+
+  will-change: transform;
+  backface-visibility: hidden;
+  transform-origin: 50% 50%;
+}
+
+.rc-orbit-card:hover {
+  border-color: rgba(193, 18, 31, 0.7);
+  background: rgba(193, 18, 31, 0.18);
+}
+
+/* Icon box inside every orbit card */
+.rc-orbit-icon {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  flex: none;
+  border-radius: 13px;
+  color: #C1121F;
+  background: rgba(193, 18, 31, 0.20);
+  box-shadow: inset 0 0 0 1px rgba(193, 18, 31, 0.32);
+}
+
+/* ---------- Center company circle ---------- */
+
+.rc-globe-core {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  width: clamp(160px, 11vw, 210px);
+  aspect-ratio: 1 / 1;
+  transform: translate(-50%, -50%);
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background:
+    radial-gradient(circle at 35% 22%, rgba(255, 255, 255, 0.13), transparent 32%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.045));
+  box-shadow: 0 24px 80px rgba(193, 18, 31, 0.28);
+  backdrop-filter: blur(22px);
+  padding: 24px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+.rc-globe-core-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Background glow behind globe */
+.rc-globe-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      rgba(255, 255, 255, 0.18),
+      rgba(193, 18, 31, 0.10) 24%,
+      rgba(193, 18, 31, 0.04) 45%,
+      transparent 68%
+    );
+  filter: blur(22px);
+  pointer-events: none;
+}
+
+/* Soft floor shadow */
+.rc-globe-shadow {
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  height: 40px;
+  width: 220px;
+  transform: translateX(-50%);
+  border-radius: 9999px;
+  background: rgba(193, 18, 31, 0.22);
+  filter: blur(24px);
+  pointer-events: none;
+}
+
+/*
+  Accessibility:
+  If a user has reduced motion enabled,
+  keep animation but slow it down strongly.
+*/
+@media (prefers-reduced-motion: reduce) {
+  .rc-globe-earth,
+  .rc-orbit-layer,
+  .rc-orbit-card {
+    animation-duration: 40s;
+  }
+}
+
+/* Keyboard accessibility */
+.skip-link {
+  position: fixed;
+  z-index: 9999;
+  left: 1rem;
+  top: 1rem;
+  transform: translateY(-180%);
+  border-radius: 0.75rem;
+  background: #ffffff;
+  color: #0a0a0a;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  transition: transform 160ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+:focus-visible {
+  outline: 2px solid #c1121f;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

@@ -1,0 +1,5 @@
+import { notFound } from "next/navigation";
+import DetailShell from "@/components/DetailShell";
+import { getSiteContent } from "@/lib/storage";
+export const dynamic="force-dynamic";
+export default async function Page({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const c=await getSiteContent();const x=c.insights.find(i=>i.slug===slug&&i.status==="published");if(!x)notFound();return <DetailShell eyebrow={x.category} title={x.title} description={x.summary} backHref="/#insights" backLabel="Back to insights"><article className="max-w-4xl rounded-[2rem] border border-white/10 bg-white/[0.04] p-7 sm:p-10"><p className="text-sm font-semibold text-zinc-500">Published {new Date(x.publishedAt).toLocaleDateString("en",{year:"numeric",month:"long",day:"numeric"})}</p><p className="mt-6 text-lg leading-9 text-zinc-300">{x.summary}</p><p className="mt-6 leading-8 text-zinc-400">This insight entry is now routed and publishable through the Team DRSA content model. The admin content studio can expand the entry structure as editorial content grows.</p></article></DetailShell>}

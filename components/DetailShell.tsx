@@ -1,0 +1,6 @@
+import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
+
+export default function DetailShell({ eyebrow, title, description, backHref = "/", backLabel = "Back to Team DRSA", children }: { eyebrow: string; title: string; description?: string; backHref?: string; backLabel?: string; children: React.ReactNode }) {
+  return <main id="main-content" className="min-h-screen bg-[#0A0A0A] text-white"><section className="relative overflow-hidden px-5 py-10 sm:px-8 lg:px-12"><div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_10%,rgba(193,18,31,0.28),transparent_34%),radial-gradient(circle_at_82%_18%,rgba(255,255,255,0.08),transparent_24%),linear-gradient(135deg,#0A0A0A,#151515_48%,#050505)]" /><div className="relative mx-auto max-w-6xl"><Link href={backHref} className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-zinc-300 hover:bg-white/10 hover:text-white"><ArrowLeft className="h-4 w-4" />{backLabel}</Link><div className="mt-12 max-w-4xl"><p className="text-sm font-black uppercase tracking-[0.3em] text-[#C1121F]">{eyebrow}</p><h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-6xl">{title}</h1>{description && <p className="mt-6 text-lg leading-8 text-zinc-300">{description}</p>}</div><div className="mt-12">{children}</div></div></section></main>;
+}

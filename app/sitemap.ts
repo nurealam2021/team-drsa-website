@@ -1,0 +1,4 @@
+import type { MetadataRoute } from "next";
+import { getSiteContent } from "@/lib/storage";
+export const dynamic="force-dynamic";
+export default async function sitemap():Promise<MetadataRoute.Sitemap>{const base=(process.env.NEXT_PUBLIC_SITE_URL||"https://example.invalid").replace(/\/$/,"");const c=await getSiteContent();const paths=["","/privacy","/terms","/security",...c.services.map(x=>`/services/${x.slug}`),...c.leadership.map(x=>`/profile/${x.slug}`),...c.foundingTeam.map(x=>`/profile/${x.slug}`),...c.projects.filter(x=>x.status==="published").map(x=>`/projects/${x.slug}`),...c.caseStudies.filter(x=>x.status==="published").map(x=>`/case-studies/${x.slug}`),...c.insights.filter(x=>x.status==="published").map(x=>`/insights/${x.slug}`),...c.careers.filter(x=>x.status==="open").map(x=>`/careers/${x.slug}`)];return paths.map(path=>({url:`${base}${path}`,lastModified:new Date(),changeFrequency:path===""?"weekly":"monthly",priority:path===""?1:0.7}))}

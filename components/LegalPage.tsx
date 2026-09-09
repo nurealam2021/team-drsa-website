@@ -1,0 +1,2 @@
+import DetailShell from "@/components/DetailShell";
+export default function LegalPage({eyebrow,title,intro,sections}:{eyebrow:string;title:string;intro:string;sections:Array<{title:string;body:string}>}){return <DetailShell eyebrow={eyebrow} title={title} description={intro}>{sections.map(x=><section key={x.title} className="mb-5 max-w-4xl rounded-3xl border border-white/10 bg-white/[0.04] p-7"><h2 className="text-xl font-semibold">{x.title}</h2><p className="mt-3 leading-8 text-zinc-300">{x.body}</p></section>)}</DetailShell>}

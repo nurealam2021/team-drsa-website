@@ -1,0 +1,731 @@
+{
+  "company": {
+    "name": "Team DRSA",
+    "shortName": "Team DRSA",
+    "logoPath": "/logo/logo.png",
+    "email": "",
+    "phone": "",
+    "address": "Available by consultation",
+    "linkedin": "https://www.linkedin.com/in/md-nur-e-alam-266935156/",
+    "tagline": "Secure infrastructure for you. My name is DoloN. Enterprise outcomes.",
+    "description": "Cybersecurity, infrastructure, consultancy, and custom software engineering for organizations that require trust, scalability, and control."
+  },
+  "hero": {
+    "badge": "Protecting the digital world with enterprise-grade technology",
+    "headline": "Secure infrastructure. Custom software. Enterprise outcomes.",
+    "description": "Cloud security, resilient infrastructure, network protection, IT consultancy, and custom enterprise applications delivered through one security-first technology team.",
+    "stats": [
+      {
+        "value": "Security-first",
+        "label": "Delivery principle"
+      },
+      {
+        "value": "24/7-ready",
+        "label": "Operational design"
+      },
+      {
+        "value": "6",
+        "label": "Core service areas"
+      },
+      {
+        "value": "End-to-end",
+        "label": "Delivery lifecycle"
+      }
+    ]
+  },
+  "services": [
+    {
+      "slug": "cloud-security",
+      "title": "Cloud Security Solutions",
+      "eyebrow": "Cloud Security",
+      "icon": "CloudCog",
+      "image": "/logo/logo.png",
+      "summary": "Enterprise-grade cloud protection for secure migration, governance, identity control, compliance readiness, and continuous visibility.",
+      "overview": "Team DRSA helps organizations design and operate secure cloud environments with a practical, risk-aware approach. The engagement is tailored to the client environment, risk profile, compliance needs, and delivery objectives.",
+      "highlights": [
+        "Cloud landing zone security",
+        "Identity and access governance",
+        "Cloud posture and misconfiguration review",
+        "Compliance-ready cloud architecture"
+      ],
+      "capabilities": [
+        "Cloud security assessment",
+        "Secure cloud migration planning",
+        "IAM and privilege review",
+        "Cloud firewall and WAF planning",
+        "SIEM and monitoring integration",
+        "Cloud policy and governance documentation"
+      ],
+      "workflow": [
+        "Discovery and requirement analysis",
+        "Current cloud risk assessment",
+        "Target architecture and control design",
+        "Implementation support",
+        "Validation, documentation, and handover"
+      ],
+      "technologies": [
+        "AWS",
+        "Azure",
+        "Google Cloud",
+        "IAM",
+        "WAF",
+        "SIEM",
+        "DevSecOps"
+      ],
+      "industries": [
+        "Enterprise",
+        "Government",
+        "Healthcare",
+        "Education",
+        "Finance",
+        "Startups"
+      ],
+      "faq": [
+        {
+          "question": "Can this service work with our existing cloud?",
+          "answer": "Yes. It can support existing cloud environments, new cloud landing zones, and migration projects."
+        },
+        {
+          "question": "Can we update this page later?",
+          "answer": "Yes. Service scope, delivery stages, and commercial terms are tailored during discovery and proposal preparation."
+        }
+      ]
+    },
+    {
+      "slug": "traditional-it",
+      "title": "Traditional IT Infrastructure",
+      "eyebrow": "Infrastructure Services",
+      "icon": "Server",
+      "image": "/logo/logo.png",
+      "summary": "Reliable server, storage, virtualization, backup, endpoint, and infrastructure lifecycle services for business-critical environments.",
+      "overview": "Team DRSA supports physical, virtual, and hybrid infrastructure for organizations that need reliable operations, modernization, resilience, and accountable technical delivery.",
+      "highlights": [
+        "Infrastructure modernization",
+        "Server and storage planning",
+        "Backup and disaster recovery readiness",
+        "Operational documentation and support"
+      ],
+      "capabilities": [
+        "Server and storage assessment",
+        "Virtualization planning",
+        "Backup and recovery design",
+        "Endpoint and asset lifecycle support",
+        "Infrastructure monitoring planning",
+        "Maintenance and documentation"
+      ],
+      "workflow": [
+        "Infrastructure discovery",
+        "Risk and capacity review",
+        "Modernization roadmap",
+        "Implementation and testing",
+        "Handover and support planning"
+      ],
+      "technologies": [
+        "Linux",
+        "Windows Server",
+        "VMware",
+        "Hyper-V",
+        "Storage",
+        "Backup",
+        "Monitoring"
+      ],
+      "industries": [
+        "Enterprise",
+        "Education",
+        "Healthcare",
+        "Industrial",
+        "Government",
+        "NGO"
+      ],
+      "faq": [
+        {
+          "question": "Is this only for on-premise systems?",
+          "answer": "No. It can support on-premise, hybrid, and infrastructure modernization projects."
+        },
+        {
+          "question": "Can backup planning be included?",
+          "answer": "Yes. Backup, disaster recovery, and continuity planning can be included."
+        }
+      ]
+    },
+    {
+      "slug": "network-security",
+      "title": "Network Design & Security",
+      "eyebrow": "Network Solutions",
+      "icon": "Network",
+      "image": "/logo/logo.png",
+      "summary": "Secure LAN, WAN, SD-WAN, firewall, VPN, segmentation, monitoring, and network architecture services.",
+      "overview": "Team DRSA provides secure network design for organizations that need stable connectivity, controlled access, and visibility. Delivery can include architecture diagrams, vendor-aligned designs, implementation planning, validation, and operational handover.",
+      "highlights": [
+        "Secure network architecture",
+        "Firewall and access control planning",
+        "Segmentation and VPN design",
+        "Monitoring and operational visibility"
+      ],
+      "capabilities": [
+        "LAN and WAN design",
+        "Firewall architecture",
+        "VPN and remote access",
+        "Network segmentation",
+        "NAC planning",
+        "Network monitoring documentation"
+      ],
+      "workflow": [
+        "Network discovery",
+        "Topology and risk review",
+        "Architecture and policy design",
+        "Deployment support",
+        "Testing and documentation"
+      ],
+      "technologies": [
+        "Routing",
+        "Switching",
+        "Firewall",
+        "VPN",
+        "SD-WAN",
+        "NAC",
+        "IDS/IPS"
+      ],
+      "industries": [
+        "Telecom",
+        "Enterprise",
+        "Government",
+        "Industrial",
+        "Healthcare",
+        "Education"
+      ],
+      "faq": [
+        {
+          "question": "Can this include firewall policy review?",
+          "answer": "Yes. Firewall rule review, policy cleanup, and secure access planning can be included."
+        },
+        {
+          "question": "Can this support multi-branch offices?",
+          "answer": "Yes. It can support branch networks, VPN, SD-WAN, and centralized monitoring."
+        }
+      ]
+    },
+    {
+      "slug": "consultancy",
+      "title": "IT Consultancy Services",
+      "eyebrow": "Technology Consultancy",
+      "icon": "BriefcaseBusiness",
+      "image": "/logo/logo.png",
+      "summary": "Strategic IT assessment, roadmap planning, technology audit, policy design, vendor evaluation, and architecture review.",
+      "overview": "Team DRSA provides independent technology advisory for planning, documentation, executive reporting, audits, governance, architecture review, and digital transformation decisions.",
+      "highlights": [
+        "Technology roadmap planning",
+        "IT audit and gap analysis",
+        "Policy and governance design",
+        "Vendor and solution evaluation"
+      ],
+      "capabilities": [
+        "IT assessment",
+        "Digital transformation roadmap",
+        "Security and infrastructure review",
+        "Technology policy design",
+        "Vendor comparison",
+        "Executive report preparation"
+      ],
+      "workflow": [
+        "Stakeholder discovery",
+        "Current-state assessment",
+        "Gap and risk analysis",
+        "Roadmap preparation",
+        "Presentation and advisory support"
+      ],
+      "technologies": [
+        "IT Governance",
+        "Security Frameworks",
+        "Cloud Strategy",
+        "Risk Management",
+        "Documentation"
+      ],
+      "industries": [
+        "Enterprise",
+        "Government",
+        "Education",
+        "Healthcare",
+        "NGO",
+        "Startups"
+      ],
+      "faq": [
+        {
+          "question": "Can this service help before a project starts?",
+          "answer": "Yes. It is useful before software, cloud, infrastructure, or security implementation."
+        },
+        {
+          "question": "Can you prepare professional reports?",
+          "answer": "Yes. Reports, roadmaps, and technical documentation can be included."
+        }
+      ]
+    },
+    {
+      "slug": "custom-software",
+      "title": "Custom Software Development",
+      "eyebrow": "Software Engineering",
+      "icon": "Code2",
+      "image": "/logo/logo.png",
+      "summary": "Custom web apps, ERP, CRM, SaaS platforms, APIs, automation, dashboards, and AI-ready enterprise systems.",
+      "overview": "Team DRSA builds software around real business workflows. Engagements follow a structured software lifecycle covering requirements, architecture, secure implementation, testing, deployment, documentation, and support.",
+      "highlights": [
+        "Tailor-made enterprise applications",
+        "ERP, CRM, and SaaS platforms",
+        "API and automation solutions",
+        "Scalable and secure architecture"
+      ],
+      "capabilities": [
+        "Enterprise web applications",
+        "ERP and CRM systems",
+        "SaaS product development",
+        "API development",
+        "Workflow automation",
+        "Admin dashboard design",
+        "Role-based access control"
+      ],
+      "workflow": [
+        "Business workflow discovery",
+        "UX and system architecture",
+        "Agile development",
+        "Testing and deployment",
+        "Training and support"
+      ],
+      "technologies": [
+        "Next.js",
+        "React",
+        "Node.js",
+        "Python",
+        "PostgreSQL",
+        "MongoDB",
+        "REST API"
+      ],
+      "industries": [
+        "Enterprise",
+        "Government",
+        "Healthcare",
+        "Education",
+        "Industrial",
+        "NGO",
+        "Startups"
+      ],
+      "faq": [
+        {
+          "question": "Can this build ERP and CRM systems?",
+          "answer": "Yes. ERP, CRM, SaaS, dashboards, portals, APIs, and automation systems can be developed."
+        },
+        {
+          "question": "Can it integrate with existing systems?",
+          "answer": "Yes. APIs, databases, third-party services, and future AI-ready integrations can be supported."
+        }
+      ]
+    },
+    {
+      "slug": "request-service",
+      "title": "Request Service",
+      "eyebrow": "Service Request",
+      "icon": "ArrowRight",
+      "image": "/logo/logo.png",
+      "summary": "A structured way to start a consultation for cloud security, infrastructure, networking, consultancy, or custom software.",
+      "overview": "Clients can use the consultation workflow to submit requirements, select a service area, and begin discovery. Team DRSA can then review the request, contact the client, and progress toward scope and proposal.",
+      "highlights": [
+        "Structured consultation process",
+        "Requirement discovery",
+        "Service recommendation",
+        "Scope and timeline planning"
+      ],
+      "capabilities": [
+        "Initial requirement review",
+        "Technology and security discussion",
+        "Recommended service path",
+        "Scope planning",
+        "Proposal preparation",
+        "Implementation next steps"
+      ],
+      "workflow": [
+        "Submit request",
+        "Discovery discussion",
+        "Requirement and risk review",
+        "Service recommendation",
+        "Proposal and next-step planning"
+      ],
+      "technologies": [
+        "Consultation",
+        "Requirement Analysis",
+        "Project Planning",
+        "Documentation"
+      ],
+      "industries": [
+        "Enterprise",
+        "Government",
+        "Healthcare",
+        "Education",
+        "Industrial",
+        "NGO",
+        "Startups"
+      ],
+      "faq": [
+        {
+          "question": "Can clients request multiple services together?",
+          "answer": "Yes. A single request can include security, infrastructure, networking, consultancy, and software."
+        },
+        {
+          "question": "What happens after a request?",
+          "answer": "A discovery discussion is arranged to understand requirements, risk, timeline, and next steps."
+        }
+      ]
+    },
+    {
+      "slug": "information-cybersecurity",
+      "title": "Information & Cybersecurity Solutions",
+      "eyebrow": "Cybersecurity Services",
+      "icon": "ShieldCheck",
+      "image": "/logo/logo.png",
+      "summary": "Comprehensive information and cybersecurity solutions covering security assessment, governance, network security, endpoint protection, identity security, SIEM, threat detection, vulnerability management, and security monitoring.",
+      "overview": "Team DRSA helps organizations protect their information, infrastructure, applications, users, and digital assets through practical and risk-focused cybersecurity services. Our approach combines technical security controls, monitoring, governance, assessment, and continuous improvement to reduce cyber risk and strengthen organizational security posture.",
+      "highlights": [
+        "Information security assessment and risk analysis",
+        "Security architecture and control design",
+        "Threat detection and continuous monitoring",
+        "Identity, endpoint, network, and application security",
+        "Security governance and compliance readiness",
+        "Incident preparedness and security improvement"
+      ],
+      "capabilities": [
+        "Cybersecurity assessment",
+        "Vulnerability assessment",
+        "Security architecture review",
+        "Network security assessment",
+        "Active Directory security assessment",
+        "Identity and access management review",
+        "Endpoint security",
+        "SIEM implementation and monitoring",
+        "Security log management",
+        "Threat detection engineering",
+        "Incident response readiness",
+        "Security policy development",
+        "Risk assessment",
+        "Security awareness consultancy",
+        "Cloud security assessment"
+      ],
+      "workflow": [
+        "Requirement and environment discovery",
+        "Asset and security posture assessment",
+        "Risk and vulnerability identification",
+        "Security architecture and control planning",
+        "Implementation and integration",
+        "Security testing and validation",
+        "Monitoring and detection readiness",
+        "Documentation and handover",
+        "Continuous security improvement"
+      ],
+      "technologies": [
+        "Wazuh",
+        "SIEM",
+        "EDR",
+        "IDS/IPS",
+        "Active Directory",
+        "Windows Security",
+        "Linux Security",
+        "Sysmon",
+        "Firewall",
+        "IAM",
+        "MFA",
+        "Vulnerability Management",
+        "MITRE ATT&CK",
+        "Cloud Security",
+        "Network Security"
+      ],
+      "industries": [
+        "Enterprise",
+        "Telecommunication",
+        "Financial Services",
+        "Government",
+        "Healthcare",
+        "Education",
+        "Industrial",
+        "NTTN",
+        "NGO",
+        "Startups"
+      ],
+      "faq": [
+        {
+          "question": "What cybersecurity services does Team DRSA provide?",
+          "answer": "Team DRSA provides cybersecurity assessment, security architecture, network and endpoint security, identity security, Active Directory security, SIEM and monitoring, vulnerability management, risk assessment, governance, and security consultancy services."
+        },
+        {
+          "question": "Can you assess our existing IT infrastructure for security risks?",
+          "answer": "Yes. We can review existing servers, networks, endpoints, identity systems, security controls, logs, configurations, and operational practices to identify risks and recommend improvements."
+        },
+        {
+          "question": "Can Team DRSA implement SIEM and security monitoring?",
+          "answer": "Yes. We can help design and implement centralized security monitoring, log collection, SIEM integration, detection rules, alerting, dashboards, and monitoring workflows based on organizational requirements."
+        },
+        {
+          "question": "Can the service include Active Directory security?",
+          "answer": "Yes. Active Directory security assessment can include identity risks, privileged access, authentication events, security logging, attack-path exposure, monitoring requirements, and detection improvement."
+        }
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "slug": "founder",
+      "name": "Rokeya Samanta Ruhee",
+      "role": "Founder & CEO",
+      "type": "Founder",
+      "image": "/founders/founder-01.jpg",
+      "icon": "ShieldCheck",
+      "summary": "Responsible for company vision, enterprise strategy, client trust, service direction, and long-term business growth.",
+      "professionalFocus": [
+        "Enterprise technology strategy",
+        "Cybersecurity leadership",
+        "Digital transformation planning",
+        "Client relationship and governance"
+      ],
+      "responsibilities": [
+        "Defines company direction and service roadmap",
+        "Leads strategic partnerships and enterprise client engagement",
+        "Oversees business governance and delivery standards",
+        "Ensures security-first service quality across all divisions"
+      ],
+      "expertise": "Cloud security, enterprise IT strategy, business technology planning, secure digital transformation, and corporate leadership.",
+      "linkedin": "https://www.linkedin.com/in/rokeya-samanta-ruhee/"
+    },
+    {
+      "slug": "co-founder-cloud-security",
+      "name": "Jannatul Ferdaus",
+      "role": "Co-Founder & Cloud Security Lead",
+      "type": "Co-Founder",
+      "image": "/team/co-founder-01.jpg",
+      "icon": "CloudCog",
+      "summary": "Leads cloud security architecture, compliance readiness, cloud migration security, and identity protection services.",
+      "professionalFocus": [
+        "Cloud security architecture",
+        "CSPM and cloud governance",
+        "Identity and access management",
+        "Compliance-ready cloud design"
+      ],
+      "responsibilities": [
+        "Designs secure cloud landing zones",
+        "Implements cloud security controls and monitoring",
+        "Supports cloud compliance and risk assessment",
+        "Guides secure migration and DevSecOps practices"
+      ],
+      "expertise": "AWS, Azure, Google Cloud, cloud posture management, IAM, SIEM integration, and secure cloud operations.",
+      "linkedin": "https://www.linkedin.com/in/jannatul-ferdaus-3a333123b/?skipRedirect=true"
+    },
+    {
+      "slug": "co-founder-software",
+      "name": "Sayma Mahmud",
+      "role": "Co-Founder & GRC Specialist, Software Engineering Lead",
+      "type": "Co-Founder",
+      "image": "/team/co-founder-02.jpg",
+      "icon": "Code2",
+      "summary": "Leads custom software development, enterprise web applications, API platforms, automation systems, and scalable product architecture.",
+      "professionalFocus": [
+        "Enterprise software architecture",
+        "Custom web application development",
+        "ERP, CRM, and SaaS platforms",
+        "API and automation engineering"
+      ],
+      "responsibilities": [
+        "Leads software architecture and technical delivery",
+        "Defines reusable engineering standards",
+        "Oversees application security and scalability",
+        "Manages product development lifecycle and deployment"
+      ],
+      "expertise": "Next.js, React, Node.js, APIs, databases, ERP systems, CRM platforms, automation, and scalable SaaS architecture.",
+      "linkedin": "https://www.linkedin.com/in/sayma-mahmud/"
+    },
+    {
+      "slug": "co-founder-network-infrastructure",
+      "name": "Md. Nur E Alam",
+      "role": "Co-Founder & Network Infrastructure Lead",
+      "type": "Co-Founder",
+      "image": "/team/co-founder-03.jpg",
+      "icon": "Network",
+      "summary": "Leads network design, traditional IT infrastructure, firewall architecture, segmentation, and secure connectivity solutions.",
+      "professionalFocus": [
+        "Network architecture",
+        "Infrastructure modernization",
+        "Firewall and perimeter security",
+        "Data center and endpoint operations"
+      ],
+      "responsibilities": [
+        "Designs secure LAN, WAN, and SD-WAN architecture",
+        "Oversees firewall, VPN, NAC, and segmentation planning",
+        "Supports server, storage, backup, and infrastructure delivery",
+        "Improves operational reliability and network visibility"
+      ],
+      "expertise": "Network security, routing, switching, firewalls, VPN, SD-WAN, virtualization, server infrastructure, and monitoring.",
+      "linkedin": "https://www.linkedin.com/in/md-nur-e-alam-266935156/"
+    }
+  ],
+  "foundingTeam": [],
+  "industries": [
+    {
+      "icon": "Landmark",
+      "title": "Government",
+      "description": "Secure digital services, citizen platforms, compliance, and infrastructure modernization."
+    },
+    {
+      "icon": "Building2",
+      "title": "Enterprise",
+      "description": "Departmental platforms, secure cloud, governance, automation, and integration."
+    },
+    {
+      "icon": "HeartPulse",
+      "title": "Healthcare",
+      "description": "Privacy-first platforms, protected records, workflows, and audit-friendly systems."
+    },
+    {
+      "icon": "GraduationCap",
+      "title": "Education",
+      "description": "Campus networks, learning platforms, portals, security controls, and administration tools."
+    },
+    {
+      "icon": "Factory",
+      "title": "Industrial",
+      "description": "Operational systems, secure networks, reporting, monitoring, and automation."
+    },
+    {
+      "icon": "Globe2",
+      "title": "NGO & Global Teams",
+      "description": "Project systems, reporting, secure collaboration, and field operations."
+    }
+  ],
+  "projects": [
+    {
+      "slug": "enterprise-security-dashboard",
+      "title": "Enterprise Security Dashboard",
+      "sector": "Cybersecurity",
+      "image": "/projects/project-0111.jpg",
+      "description": "Security monitoring, risk visibility, audit logs, and executive reporting in one operational view.",
+      "status": "published"
+    },
+    {
+      "slug": "digital-service-platform",
+      "title": "Digital Service Platform",
+      "sector": "Enterprise Workflow",
+      "image": "/projects/project-02.jpg",
+      "description": "Secure workflow automation designed for structured, high-volume business and service operations.",
+      "status": "published"
+    },
+    {
+      "slug": "custom-erp-system",
+      "title": "Custom ERP System",
+      "sector": "Business Operations",
+      "image": "/projects/project-03.jpg",
+      "description": "Integrated modules for operations, approvals, reporting, service delivery, and management visibility.",
+      "status": "published"
+    },
+    {
+      "slug": "network-operations-platform",
+      "title": "Network Operations Platform",
+      "sector": "Network & Infrastructure",
+      "image": "/projects/project-04.jpg",
+      "description": "Operational tooling that improves network visibility, structured workflows, and technical decision-making.",
+      "status": "published"
+    }
+  ],
+  "caseStudies": [
+    {
+      "slug": "security-monitoring-modernization",
+      "icon": "DatabaseZap",
+      "title": "Security Monitoring Modernization",
+      "summary": "Centralized security telemetry and operational visibility for faster investigation and better governance.",
+      "outcome": "Improved detection visibility, auditability, and response readiness.",
+      "status": "published"
+    },
+    {
+      "slug": "enterprise-workflow-digitalization",
+      "icon": "Layers3",
+      "title": "Enterprise Workflow Digitalization",
+      "summary": "Converted multi-team approval and service-delivery processes into controlled digital workflows.",
+      "outcome": "Clearer ownership, traceability, and management visibility.",
+      "status": "published"
+    },
+    {
+      "slug": "network-operations-visibility",
+      "icon": "Network",
+      "title": "Network Operations Visibility",
+      "summary": "Connected infrastructure data with practical operational tooling for technical teams.",
+      "outcome": "Faster access to network information and more consistent operational decisions.",
+      "status": "published"
+    }
+  ],
+  "insights": [
+    {
+      "slug": "zero-trust-enterprise-networks",
+      "title": "Zero Trust for enterprise networks",
+      "summary": "A practical introduction to identity, segmentation, verification, and monitoring for modern enterprise networks.",
+      "category": "Cybersecurity",
+      "publishedAt": "2026-08-01",
+      "status": "published"
+    },
+    {
+      "slug": "cloud-security-posture-checklist",
+      "title": "Cloud security posture checklist",
+      "summary": "Core areas to review across identity, configuration, logging, exposure, governance, and resilience.",
+      "category": "Cloud Security",
+      "publishedAt": "2026-08-10",
+      "status": "published"
+    },
+    {
+      "slug": "when-custom-erp-is-right",
+      "title": "When custom ERP is the right decision",
+      "summary": "How to decide whether business workflows justify a purpose-built application instead of generic software.",
+      "category": "Software Engineering",
+      "publishedAt": "2026-08-20",
+      "status": "published"
+    }
+  ],
+  "careers": [],
+  "support": [
+    {
+      "icon": "Headphones",
+      "title": "Support requests",
+      "description": "Existing clients can contact the team for service assistance and operational follow-up.",
+      "href": "#contact"
+    },
+    {
+      "icon": "FileText",
+      "title": "Documentation",
+      "description": "Project documentation, handover material, and support knowledge can be delivered with each engagement.",
+      "href": "#contact"
+    },
+    {
+      "icon": "ShieldCheck",
+      "title": "Security response",
+      "description": "Security-related service requests are handled through a controlled consultation and response workflow.",
+      "href": "#contact"
+    }
+  ],
+  "about": {
+    "title": "A modern technology company built for secure, mission-critical transformation.",
+    "subtitle": "Team DRSA combines cybersecurity, infrastructure, networking, consultancy, and software engineering so clients can work with one accountable technology team.",
+    "values": [
+      {
+        "icon": "ShieldCheck",
+        "title": "Security-first thinking",
+        "description": "Security, privacy, access control, and operational resilience are considered from the beginning."
+      },
+      {
+        "icon": "Layers3",
+        "title": "Enterprise-grade delivery",
+        "description": "Requirements, architecture, implementation, validation, documentation, and handover follow a structured lifecycle."
+      },
+      {
+        "icon": "Code2",
+        "title": "Practical customization",
+        "description": "Solutions are designed around real business and technical workflows instead of unnecessary complexity."
+      }
+    ],
+    "deliverySteps": [
+      "Discovery and advisory",
+      "Secure architecture",
+      "Implementation and development",
+      "Testing, deployment, and support"
+    ]
+  }
+}

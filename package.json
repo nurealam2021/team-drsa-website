@@ -1,0 +1,36 @@
+{
+  "name": "team-drsa-website",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm run lint && npm run build",
+    "test": "node scripts/smoke.mjs",
+    "verify": "npm run typecheck && npm run lint && npm test"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "4.3.0",
+    "lucide-react": "1.16.0",
+    "next": "16.2.6",
+    "postcss": "8.5.14",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "tailwindcss": "4.3.0",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "25.8.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.6",
+    "typescript": "6.0.3"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}
